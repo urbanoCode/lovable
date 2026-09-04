@@ -1,0 +1,65 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "src_routes_index_index",
+      "label": "Index()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "index()",
+      "source_file": "src/routes/index.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_routes_index",
+      "label": "index.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "index.tsx",
+      "source_file": "src/routes/index.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_routes_index_route",
+      "label": "Route",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "route",
+      "source_file": "src/routes/index.tsx",
+      "source_location": "L3"
+    }
+  ],
+  "links": [
+    {
+      "source": "src_routes_index",
+      "target": "src_routes_index_route",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/routes/index.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_routes_index",
+      "target": "src_routes_index_index",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "collection",
+      "source_file": "src/routes/index.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "5531c7095490a2eb22efbeffd88f4a90a6a5fb3d"
+}
